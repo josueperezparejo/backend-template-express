@@ -66,7 +66,7 @@ class Server {
     }
   }
 
-  public async listen(): Promise<void> {
+  public async start(): Promise<void> {
     await this.connectToDatabase();
 
     this.app.listen(this.port, () => {
